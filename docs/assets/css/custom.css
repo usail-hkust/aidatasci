@@ -1,0 +1,331 @@
+:root {
+  --heading-color: #14364a;
+  --accent-color: #0f8b8d;
+  --nav-dropdown-hover-color: #0f8b8d;
+}
+
+.dark-background {
+  --background-color: #071a28;
+  --surface-color: #0d2d42;
+}
+
+.header .logo img {
+  max-height: 46px;
+  margin-right: 0;
+}
+
+.header .cta-btn,
+.header .cta-btn:focus {
+  background: linear-gradient(135deg, #0f8b8d, #23b6a9);
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(52, 211, 153, 0.2), transparent 30%),
+    radial-gradient(circle at 82% 24%, rgba(14, 165, 233, 0.18), transparent 30%),
+    radial-gradient(circle at 70% 80%, rgba(15, 139, 141, 0.22), transparent 35%),
+    linear-gradient(180deg, #071a28 0%, #0b2232 58%, #102f42 100%);
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  opacity: 0.8;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.35));
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-kicker {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.78);
+  font-family: var(--heading-font);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  max-width: 1040px;
+  font-size: 58px;
+  line-height: 1.08;
+}
+
+.hero h2 span {
+  color: #4fe1d5;
+}
+
+.hero-meta {
+  max-width: 720px;
+  margin: 18px auto 0;
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary-hero,
+.btn-secondary-hero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.btn-primary-hero {
+  background: linear-gradient(135deg, #0f8b8d, #23b6a9);
+  color: #ffffff;
+  box-shadow: 0 18px 40px rgba(15, 139, 141, 0.28);
+}
+
+.btn-primary-hero:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-secondary-hero {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-secondary-hero:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero .about-info {
+  background: rgba(8, 23, 36, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.content-card,
+.person-card,
+.date-card,
+.venue-placeholder {
+  height: 100%;
+  padding: 28px 30px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 20px 55px rgba(17, 39, 54, 0.08);
+}
+
+.content-card {
+  margin-bottom: 24px;
+}
+
+.content-card h3,
+.date-card h3,
+.venue-placeholder h3 {
+  margin-bottom: 14px;
+}
+
+.topic-list,
+.simple-list {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.topic-list li,
+.simple-list li {
+  margin-bottom: 12px;
+}
+
+.date-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f5fbfb 100%);
+}
+
+.date-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, rgba(15, 139, 141, 0.18), transparent 72%);
+}
+
+.date-label,
+.person-role,
+.venue-badge {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(15, 139, 141, 0.1);
+  color: #0f6e73;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.person-card {
+  border: 1px solid rgba(15, 139, 141, 0.08);
+}
+
+.person-card h4 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.person-card p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+
+.panel-card {
+  margin-bottom: 24px;
+}
+
+.panel-theme {
+  margin-bottom: 12px;
+  font-family: var(--heading-font);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--heading-color);
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 28px;
+}
+
+.committee-grid div {
+  position: relative;
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+.committee-grid div::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0f8b8d;
+}
+
+.schedule-shell {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px 28px;
+  box-shadow: 0 20px 55px rgba(17, 39, 54, 0.08);
+}
+
+.schedule .schedule-item {
+  padding: 24px 0;
+}
+
+.schedule .schedule-item:first-child {
+  padding-top: 0;
+}
+
+.schedule .schedule-item:last-child {
+  padding-bottom: 0;
+}
+
+.venue-placeholder {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at top left, rgba(79, 225, 213, 0.18), transparent 35%),
+    linear-gradient(180deg, #0c2434 0%, #12374e 100%);
+  color: #ffffff;
+}
+
+.venue-placeholder h3,
+.venue-placeholder p {
+  color: #ffffff;
+}
+
+.venue-copy {
+  min-height: 100%;
+}
+
+.faq .faq-container .faq-item h3 {
+  padding-right: 42px;
+}
+
+.contact .info-item {
+  min-height: 240px;
+  border-radius: 22px;
+  box-shadow: 0 20px 55px rgba(17, 39, 54, 0.08);
+}
+
+.contact .info-item p {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .hero h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 991px) {
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: auto;
+    padding-top: 140px;
+  }
+
+  .hero h2 {
+    font-size: 38px;
+  }
+
+  .hero-meta {
+    font-size: 18px;
+  }
+
+  .content-card,
+  .person-card,
+  .date-card,
+  .venue-placeholder,
+  .schedule-shell {
+    padding: 22px 20px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .btn-primary-hero,
+  .btn-secondary-hero {
+    width: 100%;
+  }
+}
