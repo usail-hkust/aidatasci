@@ -207,6 +207,13 @@
   color: color-mix(in srgb, var(--default-color), transparent 18%);
 }
 
+.person-affiliation {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4f6572;
+}
+
 .person-links {
   margin-bottom: 16px;
 }
