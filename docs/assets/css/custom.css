@@ -170,7 +170,6 @@
 }
 
 .date-label,
-.person-role,
 .venue-badge {
   display: inline-block;
   margin-bottom: 14px;
@@ -209,7 +208,7 @@
 }
 
 .person-links {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .scholar-link {
