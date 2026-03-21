@@ -188,6 +188,11 @@
   text-align: center;
 }
 
+#organizers {
+  --default-color: #2f3138;
+  --heading-color: #14364a;
+}
+
 .person-photo {
   display: block;
   width: 100%;
@@ -212,7 +217,7 @@
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--heading-color);
+  color: #14364a !important;
 }
 
 .person-links {
