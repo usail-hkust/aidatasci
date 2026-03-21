@@ -203,6 +203,30 @@
   border-radius: 16px;
 }
 
+.person-photo-hao {
+  object-position: center 16%;
+}
+
+.person-photo-marinka {
+  object-position: center 18%;
+}
+
+.person-photo-yong {
+  object-position: center 14%;
+}
+
+.person-photo-jindong {
+  object-position: center 12%;
+}
+
+.person-photo-xia {
+  object-position: center 18%;
+}
+
+.person-photo-xing {
+  object-position: center 14%;
+}
+
 .person-card h4 {
   margin-bottom: 8px;
   font-size: 24px;
