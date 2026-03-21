@@ -188,6 +188,16 @@
   border: 1px solid rgba(15, 139, 141, 0.08);
 }
 
+.person-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 18px;
+  border-radius: 16px;
+}
+
 .person-card h4 {
   margin-bottom: 8px;
   font-size: 24px;
@@ -196,6 +206,26 @@
 .person-card p {
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 18%);
+}
+
+.person-links {
+  margin-top: 16px;
+}
+
+.scholar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(15, 139, 141, 0.08);
+  color: #0f6e73;
+  font-weight: 600;
+}
+
+.scholar-link:hover {
+  color: #0b5a5f;
+  background: rgba(15, 139, 141, 0.14);
 }
 
 .panel-card {
