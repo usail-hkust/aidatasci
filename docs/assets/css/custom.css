@@ -216,7 +216,9 @@
 }
 
 .person-photo-jindong {
-  object-position: center 24%;
+  object-fit: contain;
+  object-position: center bottom;
+  background: #eef3f6;
 }
 
 .person-photo-xia {
