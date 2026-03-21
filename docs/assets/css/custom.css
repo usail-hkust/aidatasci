@@ -213,11 +213,16 @@
   color: color-mix(in srgb, var(--default-color), transparent 18%);
 }
 
-.person-affiliation {
+#organizers .person-affiliation {
   margin-top: 10px;
   font-size: 16px;
   line-height: 1.5;
   color: #14364a !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: normal;
 }
 
 .person-links {
