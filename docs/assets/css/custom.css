@@ -216,9 +216,15 @@
 }
 
 .person-photo-jindong {
+  width: 70%;
+  height: auto;
+  aspect-ratio: auto;
+  max-height: 260px;
   object-fit: contain;
-  object-position: center bottom;
-  background: #eef3f6;
+  object-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
 }
 
 .person-photo-xia {
