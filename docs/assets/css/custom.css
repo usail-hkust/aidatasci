@@ -338,10 +338,6 @@
   box-shadow: 0 20px 55px rgba(17, 39, 54, 0.08);
 }
 
-.talk-card-featured {
-  border-color: rgba(15, 139, 141, 0.2);
-}
-
 .talk-label {
   display: inline-block;
   margin-bottom: 14px;
@@ -368,18 +364,13 @@
   line-height: 1.5;
 }
 
-.talk-detail,
-.talk-abstract {
+.talk-detail {
   color: color-mix(in srgb, var(--default-color), transparent 12%);
   line-height: 1.7;
 }
 
 .talk-detail {
   margin-bottom: 14px;
-}
-
-.talk-abstract {
-  font-size: 15px;
 }
 
 .panel-card {
